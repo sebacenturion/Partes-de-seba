@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.28.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Piloto maquetacion</title>
+  </head>
+  <body class="font-serif bg-gray-50 overflow-x-hidden">
+    <!-- Navbar starts -->
+    <div class="w-full fixed z-30">
+      <div class="navbar bg-base-100 bg-red-500 flex justify-between px-12">
+        <!-- Logo y language selector -->
+        <div class="flex items-center gap-4">
+          <span class="font-sans text-3xl text-white font-bold">IPA</span>
+          <select
+            class="bg-red-500 py-1 px-3 text-white rounded-full hover:bg-red-600"
+            name="select"
+          >
+            <option value="value1">Español</option>
+            <option value="value3">Guarani</option>
+            <option value="value3">Ingles</option>
+          </select>
+        </div>
+        <!-- Logo y language selector ends -->
+        <!-- Search bar -->
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input
+              type="text"
+              placeholder="Busqueda"
+              class="input input-bordered bg-gray-50"
+            />
+          </div>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="https://placeimg.com/80/80/people" />
+              </div>
+            </label>
+            <ul
+              tabindex="0"
+              class="mt-3 p-2 shadow menu menu-compact dropdown-content rounded-box bg-gray-100 w-52"
+            >
+              <li>
+                <a class="justify-between"> Perfil </a>
+              </li>
+              <li><a>Configuración</a></li>
+              <li><a>Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Search bar ends -->
+      </div>
+      <div
+        class="bg-white text-red-500 flex py-3 items-center gap-4 px-12 shadow-md"
+      >
+        <span class="font-bold"> Cursos mas buscados: </span>
+        <span
+          class="bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-red-500"
+          >#filigrana</span
+        >
+        <span
+          class="bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-red-500"
+          >#Ñanduti</span
+        >
+        <span
+          class="bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-red-500"
+          >#Barro</span
+        >
+      </div>
+    </div>
+    <!-- Navbar ends -->
+
+    <!-- Sidebar -->
+    <div class="w-full h-full">
+      <div
+        class="w-72 h-full overflow-scroll overflow-x-hidden aside fixed pt-32"
+      >
+        <div class="pl-8 pr-2 pt-6">
+          <h2 class="underline">Informacion</h2>
+          <ul>
+            <li><a href="#">Que es la artesania</a></li>
+            <li><a href="#">Como podemos promover la artesania</a></li>
+            <li><a href="#">Cuantos tipos de artesanias existen</a></li>
+          </ul>
+          <br />
+
+          <h2 class="underline">Artesanos</h2>
+          <ul>
+            <li><a href="#">Eustaquia de Garay</a></li>
+            <li><a href="#">Felicita de Rolon</a></li>
+            <li><a href="#">Nidia Gimenez</a></li>
+          </ul>
+          <br /><br />
+
+          <h2 class="underline">Categorias</h2>
+          <ul>
+            <li><a href="#">Tallado en madera</a></li>
+            <li><a href="#">Arte en barro y arcilla</a></li>
+            <li><a href="#">El arte de las telas</a></li>
+          </ul>
+          <br /><br />
+
+          <h2 class="underline">Queres ser maestro?</h2>
+          <ul>
+            <li><a href="#">Informacion</a></li>
+            <li><a href="#">Registrese</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar ends -->
+    <!-- tarjeta -->
+    <div
+      class="container ml-auto py-4 md:w-4/5 w-11/12 pl-6 pt-36 bg-yellow-100 min-h-screen flex"
+    >
+      <div class="shrink-0 max-w-[1200px]">
+        <!-- tarjeta 1 -->
+
+        <div class="rounded overflow-hidden shadow-lg m-3 w-9/12">
+          <div class="h-[400px] w-full overflow-hidden">
+            <img
+              class="w-full"
+              src="/static/nhanduti.jpg"
+              alt="Sunset in the mountains"
+            />
+          </div>
+
+          <div class="px-12 py-8 bg-white">
+            <div class="font-bold font-sans text-xl mb-2 text-[36px] mb-5">
+              La tela
+            </div>
+            <p class="text-gray-700 font-sans leading-relaxed text-lg">
+              Uno de los elementos base del bordado en Ao Po’i es la tela,
+              encontramos en venta nuestro tradicional Ao Po’i en centros
+              comercialesde todo el país, el cual viene en una variedad de
+              colores, lo que nospermite realizar prendas modernas y bien
+              coloridas, a gusto o necesidad de cada uno. Este género está
+              hilado con puro algodón y, al tenertrama algo abierta, es ideal
+              para el caluroso clima de nuestro país yotros países.Otra opción
+              en telas es el uso del lienzo, que puede ser el lienzorustico o
+              lienzo de fabrica.Lienzo rústico: Está hecho en telar manual.
+              Lienzo de fábrica: Realizado en fabrica textil. Estos se pueden
+              adquirir en color crudo o en una gran gama decolores. Sabias que
+              Al ser de algodón, estatela se encoje un poco allavarla, cosa que
+              hayque calcular paraadquirir el género
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded overflow-hidden shadow-lg m-3 w-9/12">
+          <div class="h-[400px] w-full overflow-hidden">
+            <img
+              class="w-full"
+              src="/static/nhanduti.jpg"
+              alt="Sunset in the mountains"
+            />
+          </div>
+
+          <div class="px-12 py-8 bg-white">
+            <div class="font-bold font-sans text-xl mb-2 text-[36px] mb-5">
+              La tela
+            </div>
+            <p class="text-gray-700 font-sans leading-relaxed text-lg">
+              Uno de los elementos base del bordado en Ao Po’i es la tela,
+              encontramos en venta nuestro tradicional Ao Po’i en centros
+              comercialesde todo el país, el cual viene en una variedad de
+              colores, lo que nospermite realizar prendas modernas y bien
+              coloridas, a gusto o necesidad de cada uno. Este género está
+              hilado con puro algodón y, al tenertrama algo abierta, es ideal
+              para el caluroso clima de nuestro país yotros países.Otra opción
+              en telas es el uso del lienzo, que puede ser el lienzorustico o
+              lienzo de fabrica.Lienzo rústico: Está hecho en telar manual.
+              Lienzo de fábrica: Realizado en fabrica textil. Estos se pueden
+              adquirir en color crudo o en una gran gama decolores. Sabias que
+              Al ser de algodón, estatela se encoje un poco allavarla, cosa que
+              hayque calcular paraadquirir el género
+            </p>
+          </div>
+        </div>
+
+        <!-- tarjeta -->
+
+        <div class="rounded overflow-hidden shadow-lg m-3 w-9/12">
+          <div class="h-[400px] w-full overflow-hidden">
+            <img
+              class="w-full"
+              src="/static/nhanduti.jpg"
+              alt="Sunset in the mountains"
+            />
+          </div>
+
+          <div class="px-12 py-8 bg-white">
+            <div class="font-bold font-sans text-xl mb-2 text-[36px] mb-5">
+              La tela
+            </div>
+            <p class="text-gray-700 font-sans leading-relaxed text-lg">
+              Uno de los elementos base del bordado en Ao Po’i es la tela,
+              encontramos en venta nuestro tradicional Ao Po’i en centros
+              comercialesde todo el país, el cual viene en una variedad de
+              colores, lo que nospermite realizar prendas modernas y bien
+              coloridas, a gusto o necesidad de cada uno. Este género está
+              hilado con puro algodón y, al tenertrama algo abierta, es ideal
+              para el caluroso clima de nuestro país yotros países.Otra opción
+              en telas es el uso del lienzo, que puede ser el lienzorustico o
+              lienzo de fabrica.Lienzo rústico: Está hecho en telar manual.
+              Lienzo de fábrica: Realizado en fabrica textil. Estos se pueden
+              adquirir en color crudo o en una gran gama decolores. Sabias que
+              Al ser de algodón, estatela se encoje un poco allavarla, cosa que
+              hayque calcular paraadquirir el género
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[280px] h-[800px] bg-blue-500 -translate-x-[280px] shrink-0 left-0 -translate-y-[500px] fixed"
+      ></div>
+    </div>
+  </body>
+</html>
